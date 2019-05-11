@@ -8,7 +8,7 @@ it('renders without crashing', () => {
   ReactDOM.unmountComponentAtNode(div);
 });
 
-it('renders without crashing 2', () => {
+it('Second Test for element', () => {
   const span = document.createElement('span');
   ReactDOM.render(<App />, span);
   ReactDOM.unmountComponentAtNode(span);
