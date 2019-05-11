@@ -7,3 +7,17 @@ before_install:
 
 script:
   - docker run -e CI=true shingiuwa/docker-react npm run test -- --watchAll=false
+
+#deploy:
+#  provider: myprovider
+#  region: "eu" (or any region where server is open)
+#  app: "docker-react"
+#  env: "dev, prod, etc"
+#  bucket_name: (for AWS) name of the zip created "like the app name"
+#  on:
+#    branch: master
+
+# generate the api keys according to environment and store them to Travis directly
+#  access_key_id: "$AWS_ACCESS_KEY"
+#  secret_access_key:
+#    secure: "$AWS_SECRET_KEY"
